@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VivaAuto — Taller Mecánico Automotriz en Escobedo, N.L.</title>
+  <meta name="description" content="VivaAuto: taller mecánico automotriz en Escobedo, N.L. Afinación, servicio de frenos, descarbonización de válvulas y limpieza de inyectores por ultrasonido. Diagnóstico computarizado y refacciones de calidad. Agenda tu cita por WhatsApp.">
+  <meta name="keywords" content="taller mecánico Escobedo, servicio automotriz Monterrey, afinación de autos, servicio de frenos Escobedo, descarbonización de válvulas, limpieza de inyectores ultrasonido, cuerpo de aceleración, VivaAuto, mecánico Las Encinas Escobedo">
+  <meta property="og:title" content="VivaAuto — Taller Mecánico Automotriz">
+  <meta property="og:description" content="Afinación, frenos, descarbonización de válvulas y limpieza de inyectores por ultrasonido. Diagnóstico computarizado, refacciones de calidad y atención directa por WhatsApp en Escobedo, N.L.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/hero-escaneo-automotriz.jpeg">
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <link rel="apple-touch-icon" href="imagenes/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">
+    <img src="imagenes/logo-vivauto.png" alt="" class="ld-logo-img">
+    <div class="ld-ring"></div>
+  </div>
+  <div class="ld-brand">
+    <p class="ld-name">VIV<em>AUTO</em></p>
+    <p class="ld-tag">Taller Mecánico Automotriz</p>
+  </div>
+  <div class="ld-progress">
+    <div class="ld-track"><div class="ld-fill"></div></div>
+    <p class="ld-note">Cargando</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Menú principal">
+  <div class="nav-wrap">
+    <a href="#" class="logo" aria-label="VivaAuto">
+      <img src="imagenes/logo-vivauto.png" alt="VivaAuto Taller Mecánico" class="logo-img">
+      <div class="logo-word">VIV<em>AUTO</em></div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#galeria">Trabajos</a></li>
+      <li><a href="#why">Ventajas</a></li>
+      <li><a href="#contact" class="nav-cta">Agenda tu Cita</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menú móvil">
+  <a href="#about">Nosotros</a>
+  <a href="#services">Servicios</a>
+  <a href="#galeria">Trabajos</a>
+  <a href="#why">Ventajas</a>
+  <a href="#contact">Agenda tu Cita</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow">VivaAuto · Av. Benito Juárez 1417, Col. Las Encinas, Escobedo N.L.</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-inner">Tu Auto, Diagnosticado</span></span>
+        <span class="h1-line"><span class="h1-inner">y Reparado con</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner">Precisión Real</span></span>
+      </h1>
+      <p class="hero-typewriter" aria-label="Servicios">
+        <span class="tw-label">Especialistas en:</span>
+        <span class="tw-text" id="twText"></span><span class="tw-cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero-p">
+        Diagnóstico computarizado, limpieza de inyectores por ultrasonido y refacciones de calidad. En VivaAuto revisamos tu vehículo con equipo profesional y te explicamos exactamente lo que necesita — sin sorpresas, con cita previa y cotización clara por WhatsApp.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/message/VUQEEHBDNSMCA1?text=Hola%20VivaAuto%2C%20quiero%20agendar%20una%20cita%20para%20mi%20auto." target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Agenda tu Cita por WhatsApp
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#services" class="btn-secondary">Ver Servicios</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Cifras clave">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="5" data-prefix="" data-suffix="">0</span>
+          <span class="stat-lbl">Servicios especializados</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="100" data-prefix="" data-suffix="%">0%</span>
+          <span class="stat-lbl">Diagnóstico computarizado</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="3" data-prefix="" data-suffix="">0</span>
+          <span class="stat-lbl">Paquetes de afinación</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Escobedo</span>
+          <span class="stat-lbl">Col. Las Encinas, N.L.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-deco" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+  </div>
+  <div class="hero-badge" aria-hidden="true">
+    <span class="hb-dot"></span>
+    <span class="hb-text">Servicio con cita previa</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section id="trust" aria-label="Servicios que ofrecemos">
+  <div class="wrap">
+    <div class="trust-row rev">
+      <p class="trust-label">Lo que hacemos</p>
+      <div class="trust-chips">
+        <span class="trust-chip">Afinación</span>
+        <span class="trust-chip">Servicio de Frenos</span>
+        <span class="trust-chip">Descarbonización de Válvulas</span>
+        <span class="trust-chip">Limpieza de Inyectores</span>
+        <span class="trust-chip">Cuerpo de Aceleración</span>
+        <span class="trust-chip">Diagnóstico con Escáner</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-white">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap rev from-l">
+        <div class="about-img-main">
+          <img
+            src="imagenes/trabajo-motor-chevrolet.jpeg"
+            alt="Motor revisado a fondo en el taller VivaAuto, Escobedo N.L." loading="lazy">
+        </div>
+        <div class="about-accent">
+          <p class="a-num">100%</p>
+          <p class="a-lbl">Diagnóstico con escáner</p>
+        </div>
+      </div>
+      <div class="about-text rev">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2 class="heading">Un Taller que Revisa, Explica y Repara</h2>
+        <p>VivaAuto es un taller mecánico automotriz ubicado en Avenida Benito Juárez 1417, Col. Las Encinas, Escobedo N.L. Nos enfocamos en la eficiencia y el rendimiento real de tu vehículo: cada auto que entra pasa por un diagnóstico computarizado antes de tocar una sola pieza.</p>
+        <p>Usamos equipo profesional de diagnóstico Launch, limpieza de inyectores por ultrasonido con tecnología Autool, y trabajamos con refacciones y lubricantes de marca como AMSOIL y MANN-FILTER. Te mostramos el antes y el después de cada servicio, porque tu confianza se gana con evidencia, no con promesas.</p>
+        <div class="about-stats">
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="5" data-prefix="" data-suffix=""></p>
+            <p class="a-stat-l">Servicios especializados</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="100" data-prefix="" data-suffix="%"></p>
+            <p class="a-stat-l">Diagnóstico computarizado</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="3" data-prefix="" data-suffix=""></p>
+            <p class="a-stat-l">Paquetes de afinación</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n">N.L.</p>
+            <p class="a-stat-l">Sede en Escobedo</p>
+          </div>
+        </div>
+        <div class="about-brands">
+          <span>Launch</span>
+          <span>Autool</span>
+          <span>AMSOIL</span>
+          <span>MANN-FILTER</span>
+          <span>Motorfil</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section bg-off">
+  <div class="wrap">
+    <div class="section-head section-head--center rev">
+      <p class="eyebrow">Nuestros servicios</p>
+      <h2 class="heading">Mantenimiento y Reparación, Sin Adivinar</h2>
+      <p class="sub">Cinco servicios especializados con equipo profesional, precios claros desde el primer momento y evidencia de antes/después en cada trabajo.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card rev d1">
+        <div class="svc-card-bg" style="background-image:url('imagenes/stock-afinacion.jpg')"></div>
+        <div class="svc-card-ov"></div>
+        <span class="svc-num" aria-hidden="true">01</span>
+        <span class="svc-price">Desde $1,600 MXN</span>
+        <h3>Afinación — 3 Paquetes</h3>
+        <p>Básico, Completo o Premium: aceite sintético, filtros, bujías, limpieza de inyectores por ultrasonido y revisión de puntos de seguridad según el paquete.</p>
+        <div class="svc-tags">
+          <span class="tag">Aceite sintético</span>
+          <span class="tag">Bujías</span>
+          <span class="tag">Previa cita</span>
+        </div>
+        <a class="svc-link" href="https://wa.me/message/VUQEEHBDNSMCA1?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Afinaci%C3%B3n%20%28B%C3%A1sico/Completo/Premium%29.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%20y%20precio%3F" target="_blank" rel="noopener noreferrer">
+            Cotizar por WhatsApp
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="svc-card rev d2">
+        <div class="svc-card-bg" style="background-image:url('imagenes/stock-frenos.jpg')"></div>
+        <div class="svc-card-ov"></div>
+        <span class="svc-num" aria-hidden="true">02</span>
+        <span class="svc-price">Diagnóstico profesional</span>
+        <h3>Servicio de Frenos</h3>
+        <p>Revisión completa del sistema, cambio de balatas y discos, rectificación, limpieza de componentes y revisión de líquido de frenos. Tu seguridad, nuestra prioridad.</p>
+        <div class="svc-tags">
+          <span class="tag">Balatas y discos</span>
+          <span class="tag">Rectificación</span>
+          <span class="tag">Seguridad</span>
+        </div>
+        <a class="svc-link" href="https://wa.me/message/VUQEEHBDNSMCA1?text=Hola%2C%20me%20interesa%20el%20Servicio%20de%20Frenos.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%20y%20precio%3F" target="_blank" rel="noopener noreferrer">
+            Cotizar por WhatsApp
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="svc-card rev d3">
+        <div class="svc-card-bg" style="background-image:url('imagenes/stock-descarbonizacion.jpg')"></div>
+        <div class="svc-card-ov"></div>
+        <span class="svc-num" aria-hidden="true">03</span>
+        <span class="svc-price">Desde $2,500 MXN</span>
+        <h3>Descarbonización de Válvulas</h3>
+        <p>Elimina la carbonilla acumulada, recupera potencia, mejora el rendimiento de combustible y reduce emisiones. Ideal para motores GDI y multipunto.</p>
+        <div class="svc-tags">
+          <span class="tag">Antes / Después</span>
+          <span class="tag">GDI y multipunto</span>
+          <span class="tag">Menos emisiones</span>
+        </div>
+        <a class="svc-link" href="https://wa.me/message/VUQEEHBDNSMCA1?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20Descarbonizaci%C3%B3n%20de%20V%C3%A1lvulas.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%20y%20precio%3F" target="_blank" rel="noopener noreferrer">
+            Cotizar por WhatsApp
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="svc-card rev d4">
+        <div class="svc-card-bg" style="background-image:url('imagenes/stock-inyectores.jpg')"></div>
+        <div class="svc-card-ov"></div>
+        <span class="svc-num" aria-hidden="true">04</span>
+        <span class="svc-price">Tecnología de ultrasonido</span>
+        <h3>Limpieza y Prueba de Inyectores</h3>
+        <p>Lavado por ultrasonido, prueba de flujo y fugas, y verificación del patrón de aspersión. Inyectores limpios, motor al 100%, menos consumo de combustible.</p>
+        <div class="svc-tags">
+          <span class="tag">Ultrasonido</span>
+          <span class="tag">Autos y camionetas</span>
+          <span class="tag">Con garantía</span>
+        </div>
+        <a class="svc-link" href="https://wa.me/message/VUQEEHBDNSMCA1?text=Hola%2C%20me%20interesa%20la%20Limpieza%20y%20Prueba%20de%20Inyectores%20por%20ultrasonido.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%20y%20precio%3F" target="_blank" rel="noopener noreferrer">
+            Cotizar por WhatsApp
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="svc-card rev d5">
+        <div class="svc-card-bg" style="background-image:url('imagenes/stock-cuerpo-aceleracion.jpg')"></div>
+        <div class="svc-card-ov"></div>
+        <span class="svc-num" aria-hidden="true">05</span>
+        <span class="svc-price">Con re-aprendizaje por escáner</span>
+        <h3>Limpieza de Cuerpo de Aceleración</h3>
+        <p>Limpieza y re-aprendizaje con scanner profesional. Mejora el ralentí, reduce el consumo de combustible y previene códigos de falla en el motor.</p>
+        <div class="svc-tags">
+          <span class="tag">Ralentí estable</span>
+          <span class="tag">Ahorro de gasolina</span>
+          <span class="tag">Escáner VivaAuto</span>
+        </div>
+        <a class="svc-link" href="https://wa.me/message/VUQEEHBDNSMCA1?text=Hola%2C%20me%20interesa%20la%20Limpieza%20y%20Re-aprendizaje%20de%20Cuerpo%20de%20Aceleraci%C3%B3n.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%20y%20precio%3F" target="_blank" rel="noopener noreferrer">
+            Cotizar por WhatsApp
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="svc-card rev d6">
+        <div class="svc-card-bg" style="background-image:url('imagenes/stock-diagnostico.jpg')"></div>
+        <div class="svc-card-ov"></div>
+        <span class="svc-num" aria-hidden="true">06</span>
+        <span class="svc-price">Facturamos · Aceptamos tarjeta</span>
+        <h3>Diagnóstico y Escaneo Automotriz</h3>
+        <p>Lectura de códigos de falla, análisis en tiempo real y pruebas de sistema antes de cualquier reparación. Sabrás exactamente qué necesita tu auto.</p>
+        <div class="svc-tags">
+          <span class="tag">Escáner Launch</span>
+          <span class="tag">Cita previa</span>
+          <span class="tag">Diagnóstico claro</span>
+        </div>
+        <a class="svc-link" href="https://wa.me/message/VUQEEHBDNSMCA1?text=Hola%20VivaAuto%2C%20quiero%20agendar%20una%20cita%20para%20mi%20auto." target="_blank" rel="noopener noreferrer">
+            Cotizar por WhatsApp
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="section bg-black">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main">
+          <img
+            src="imagenes/trabajo-riel-inyectores.jpeg"
+            alt="Mecánico de VivaAuto sosteniendo riel de inyectores durante un servicio" loading="lazy">
+        </div>
+        <div class="why-img-badge">
+          <p class="wib-n">100%</p>
+          <p class="wib-l">Trabajo con evidencia</p>
+        </div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por qué elegirnos</p>
+        <h2 class="heading heading--white">La Diferencia VivaAuto</h2>
+        <p class="sub sub--white">Confiar tu auto a un taller es una decisión importante — te lo ponemos fácil de verificar.</p>
+        <div class="benefit-list">
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDD835" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 18v3"/>
+                <path d="M6 9l3 3 6-6"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Diagnóstico Antes de Reparar</h4>
+              <p>Escaneamos tu vehículo con equipo Launch antes de tocar cualquier pieza — sabes qué tiene tu auto antes de decidir.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDD835" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M8 12l2.5 2.5L16 9"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Antes y Después de Cada Trabajo</h4>
+              <p>Te mostramos el resultado real de la limpieza de válvulas, inyectores y cuerpo de aceleración — evidencia, no solo palabras.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDD835" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Cotización Clara por WhatsApp</h4>
+              <p>Agenda tu cita y recibe el precio directo, sin intermediarios. Facturamos y aceptamos pago con tarjeta de crédito.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FDD835" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/>
+                <circle cx="12" cy="12" r="4"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Refacciones y Lubricantes de Marca</h4>
+              <p>Trabajamos con AMSOIL, MANN-FILTER y Motorfil — piezas y aceites de calidad comprobada, no genéricos sin garantía.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section id="numbers">
+  <div class="numbers-bg" aria-hidden="true"></div>
+  <div class="numbers-ov" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head section-head--center rev">
+      <p class="eyebrow eyebrow--white">Cómo funciona</p>
+      <h2 class="heading heading--white">Agenda tu Servicio en 4 Pasos</h2>
+    </div>
+    <div class="numbers-grid">
+      <div class="number-item rev d1">
+        <p class="num-v">01</p>
+        <p class="num-l">Escríbenos por WhatsApp y cuéntanos qué le pasa a tu auto</p>
+      </div>
+      <div class="number-item rev d2">
+        <p class="num-v">02</p>
+        <p class="num-l">Agenda tu cita previa en Av. Benito Juárez 1417, Las Encinas</p>
+      </div>
+      <div class="number-item rev d3">
+        <p class="num-v">03</p>
+        <p class="num-l">Diagnosticamos con escáner y te explicamos qué necesita</p>
+      </div>
+      <div class="number-item rev d4">
+        <p class="num-v">04</p>
+        <p class="num-l">Realizamos el servicio y te mostramos el antes y después</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria">
+  <div class="wrap">
+    <div class="brands-head rev">
+      <p class="eyebrow eyebrow--white">Trabajos reales</p>
+      <h2 class="heading heading--white">Así Trabajamos en VivaAuto</h2>
+      <p class="brands-sub">Fotos reales de nuestro taller: diagnóstico, limpieza y reparación, sin imágenes de stock.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="imagenes/trabajo-escaner-launch.jpeg" alt="Diagnóstico automotriz con escáner Launch en VivaAuto" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="imagenes/trabajo-inyectores-limpios.jpeg" alt="Inyectores de combustible limpios y listos para instalar en VivaAuto" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="imagenes/trabajo-alternador.jpeg" alt="Comparación de alternador nuevo y usado durante servicio en VivaAuto" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <img src="imagenes/trabajo-cambio-aceite.jpeg" alt="Cambio de aceite sintético AMSOIL y filtro MANN-FILTER en VivaAuto" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <img src="imagenes/trabajo-deteccion-fugas.jpeg" alt="Detección de fugas de humo en sistema de admisión, VivaAuto" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <img src="imagenes/trabajo-amortiguadores.jpeg" alt="Comparación de amortiguadores durante servicio de suspensión en VivaAuto" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <img src="imagenes/trabajo-bomba-combustible.jpeg" alt="Bomba de combustible revisada en el taller VivaAuto" loading="lazy">
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <img src="imagenes/trabajo-diagnostico-arranque.jpeg" alt="Diagnóstico eléctrico de sistema de arranque en VivaAuto" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <p class="brands-note rev">Equipo y marcas con las que trabajamos: Launch · Autool · AMSOIL · MANN-FILTER · Motorfil</p>
+
+    <div class="flyer-head rev">
+      <p class="eyebrow eyebrow--white">Material de servicio</p>
+      <h3 class="flyer-title">Conoce el Detalle de Cada Servicio</h3>
+      <p class="brands-sub">Así explicamos cada servicio a nuestros clientes: beneficios, alcance y precio, sin letras chiquitas.</p>
+    </div>
+    <div class="flyer-strip">
+      <div class="flyer-card rev d1">
+        <img src="imagenes/flyer-afinacion-paquetes.jpeg" alt="Folleto de VivaAuto con los paquetes de Afinación Básico, Completo y Premium y sus precios" loading="lazy">
+      </div>
+      <div class="flyer-card rev d2">
+        <img src="imagenes/flyer-servicio-frenos.jpeg" alt="Folleto de VivaAuto del Servicio de Frenos con la lista de trabajos incluidos" loading="lazy">
+      </div>
+      <div class="flyer-card rev d3">
+        <img src="imagenes/flyer-descarbonizacion-precio.jpeg" alt="Folleto de VivaAuto de Descarbonización de Válvulas con fotos de antes y después" loading="lazy">
+      </div>
+      <div class="flyer-card rev d4">
+        <img src="imagenes/flyer-lavado-inyectores.jpeg" alt="Folleto de VivaAuto de Lavado y Prueba de Inyectores por ultrasonido" loading="lazy">
+      </div>
+      <div class="flyer-card rev d1">
+        <img src="imagenes/flyer-cuerpo-aceleracion.jpeg" alt="Folleto de VivaAuto de Limpieza y Re-aprendizaje de Cuerpo de Aceleración con scanner" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-off">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info rev from-l">
+        <div class="contact-info-bg" aria-hidden="true"></div>
+        <div class="contact-info-content">
+          <p class="eyebrow eyebrow--white">Contáctanos</p>
+          <h2 class="heading heading--white">Agenda el Servicio de tu Auto</h2>
+          <p class="sub sub--white" style="margin-bottom:32px">Escríbenos y cuéntanos qué necesita tu vehículo. Te respondemos directo por WhatsApp con precio y disponibilidad para tu cita.</p>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FDD835" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.27z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Teléfono / WhatsApp</p>
+              <p class="c-value"><a href="tel:+528142778725">81 4277 8725</a></p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FDD835" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">WhatsApp directo</p>
+              <p class="c-value"><a href="https://wa.me/message/VUQEEHBDNSMCA1?text=Hola%20VivaAuto%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer">Enviar mensaje directo</a></p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FDD835" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16v16H4z" opacity="0"/>
+                <path d="M22 6l-10 7L2 6"/>
+                <path d="M2 6h20v12H2z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Correo</p>
+              <p class="c-value"><a href="mailto:vivautomty@gmail.com">vivautomty@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FDD835" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Ubicación</p>
+              <p class="c-value">Av. Benito Juárez 1417, Col. Las Encinas, Escobedo, N.L.</p>
+            </div>
+          </div>
+          <div class="c-item">
+            <div class="c-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FDD835" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <p class="c-label">Citas</p>
+              <p class="c-value">Servicio con cita previa — agenda por WhatsApp</p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://www.facebook.com/share/14pfKXbgDhB/" target="_blank" rel="noopener noreferrer" aria-label="VivaAuto en Facebook" class="cs-btn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="#FDD835" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@servicioautomotrizmty" target="_blank" rel="noopener noreferrer" aria-label="VivaAuto en TikTok" class="cs-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDD835" aria-hidden="true"><path d="M16.6 5.82c-.9-.98-1.4-2.26-1.4-3.6h-3.13v13.42a2.6 2.6 0 1 1-1.85-2.49v-3.18a5.74 5.74 0 1 0 5 5.68V9.4a7.16 7.16 0 0 0 4.16 1.33V7.6c-.9 0-1.85-.3-2.78-1.02z"/></svg>
+            </a>
+            <a href="tel:+528142778725" aria-label="Llamar a VivaAuto" class="cs-btn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#FDD835" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.27z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicitar Cotización</h3>
+          <p class="form-sub">Llena el formulario y te contactamos por WhatsApp con precio y disponibilidad.</p>
+          <form id="cForm" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fn">Nombre completo *</label>
+                <input class="fi" type="text" id="fn" name="nombre" placeholder="Tu nombre completo" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="ft">Teléfono *</label>
+                <input class="fi" type="tel" id="ft" name="telefono" placeholder="81 0000 0000" required autocomplete="tel">
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fs">Servicio que necesitas *</label>
+              <select class="fi" id="fs" name="tipo" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Afinación">Afinación (Básico / Completo / Premium)</option>
+                <option value="Servicio de Frenos">Servicio de Frenos</option>
+                <option value="Descarbonización de Válvulas">Descarbonización de Válvulas</option>
+                <option value="Limpieza de Inyectores">Limpieza y Prueba de Inyectores</option>
+                <option value="Cuerpo de Aceleración">Limpieza de Cuerpo de Aceleración</option>
+                <option value="Diagnóstico">Diagnóstico / No sé qué tiene mi auto</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fm">Cuéntanos qué le pasa a tu auto</label>
+              <textarea class="fi" id="fm" name="mensaje" rows="3" placeholder="Marca, modelo, año y síntoma que presenta..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="map-card rev">
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Av.+Benito+Ju%C3%A1rez+1417%2C+Col.+Las+Encinas%2C+Escobedo%2C+N.L." target="_blank" rel="noopener noreferrer" aria-label="Abrir la ubicación de VivaAuto en Google Maps">
+        <iframe
+          class="map-frame"
+          src="https://maps.google.com/maps?q=Av.+Benito+Juarez+1417,+Col.+Las+Encinas,+Escobedo,+Nuevo+Leon,+Mexico&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación de VivaAuto en Google Maps"
+          aria-hidden="true" tabindex="-1">
+        </iframe>
+        <span class="map-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Ver en Google Maps · Escobedo, N.L.
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <img src="imagenes/logo-vivauto.png" alt="VivaAuto" class="foot-logo-img">
+          <div class="logo-word">VIV<em>AUTO</em></div>
+        </div>
+        <p class="foot-desc">Taller mecánico automotriz en Escobedo, N.L. Afinación, frenos, descarbonización de válvulas y limpieza de inyectores por ultrasonido. Diagnóstico computarizado y atención directa por WhatsApp.</p>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/share/14pfKXbgDhB/" target="_blank" rel="noopener noreferrer" aria-label="VivaAuto en Facebook" class="foot-social-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@servicioautomotrizmty" target="_blank" rel="noopener noreferrer" aria-label="VivaAuto en TikTok" class="foot-social-btn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82c-.9-.98-1.4-2.26-1.4-3.6h-3.13v13.42a2.6 2.6 0 1 1-1.85-2.49v-3.18a5.74 5.74 0 1 0 5 5.68V9.4a7.16 7.16 0 0 0 4.16 1.33V7.6c-.9 0-1.85-.3-2.78-1.02z"/></svg>
+          </a>
+          <a href="https://wa.me/message/VUQEEHBDNSMCA1" target="_blank" rel="noopener noreferrer" aria-label="VivaAuto en WhatsApp" class="foot-social-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.79h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="foot-col-title">Servicios</p>
+        <ul class="foot-links">
+          <li><a href="#services">Afinación</a></li>
+          <li><a href="#services">Servicio de Frenos</a></li>
+          <li><a href="#services">Descarbonización de Válvulas</a></li>
+          <li><a href="#services">Limpieza de Inyectores</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Taller</p>
+        <ul class="foot-links">
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#galeria">Trabajos realizados</a></li>
+          <li><a href="#why">Por qué elegirnos</a></li>
+          <li><a href="#contact">Agenda tu cita</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Contacto</p>
+        <ul class="foot-links">
+          <li><a href="tel:+528142778725">81 4277 8725</a></li>
+          <li><a href="https://wa.me/message/VUQEEHBDNSMCA1" target="_blank" rel="noopener noreferrer">WhatsApp directo</a></li>
+          <li><a href="mailto:vivautomty@gmail.com">vivautomty@gmail.com</a></li>
+          <li><a href="https://www.facebook.com/share/14pfKXbgDhB/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 <span>VivaAuto</span>. Todos los derechos reservados.</p>
+      <p>Col. Las Encinas, Escobedo, N.L., México</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING ACTION BUTTONS -->
+<div class="fab-stack">
+  <div class="fab-item">
+    <span class="fab-tip">Síguenos en Facebook</span>
+    <a href="https://www.facebook.com/share/14pfKXbgDhB/"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="fab-btn fb-btn"
+       aria-label="Visitar VivaAuto en Facebook">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <path fill="#fff" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/>
+      </svg>
+    </a>
+  </div>
+  <div class="fab-item">
+    <span class="fab-tip">Síguenos en TikTok</span>
+    <a href="https://www.tiktok.com/@servicioautomotrizmty"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="fab-btn tk-btn"
+       aria-label="Visitar VivaAuto en TikTok">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <path fill="#fff" d="M16.6 5.82c-.9-.98-1.4-2.26-1.4-3.6h-3.13v13.42a2.6 2.6 0 1 1-1.85-2.49v-3.18a5.74 5.74 0 1 0 5 5.68V9.4a7.16 7.16 0 0 0 4.16 1.33V7.6c-.9 0-1.85-.3-2.78-1.02z"/>
+      </svg>
+    </a>
+  </div>
+  <div class="fab-item">
+    <span class="fab-tip">Escríbenos por WhatsApp</span>
+    <a href="https://wa.me/message/VUQEEHBDNSMCA1?text=Hola%20VivaAuto%2C%20quiero%20agendar%20una%20cita%20para%20mi%20auto."
+       target="_blank"
+       rel="noopener noreferrer"
+       class="fab-btn wa-btn"
+       aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+        <path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
